@@ -29,4 +29,6 @@ Layout — главное, чтобы было аккуратно.
 сделать responsiveness 
 небольшой REST API на Node.js
 Использовать Redux
+
+
 Deadline: 25.11.
