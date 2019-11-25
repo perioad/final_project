@@ -1,0 +1,17 @@
+// main: ../style.less, out: false, sourceMap: false
+
+.show-error__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 116px - 54px);
+
+  @media @small {
+    min-height: 70vh;
+  }
+}
+
+.show-error__message {
+  margin: 2rem;
+}

@@ -1,0 +1,37 @@
+// main: ../style.less, out: false, sourceMap: false
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.93rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  @media @middle {
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: inherit;
+    color: inherit;
+  }
+
+  &__phone {
+    @media @middle {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__work-hours {
+    @media @middle {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+}

@@ -1,0 +1,20 @@
+// main: ../style.less, out: false, sourceMap: false
+
+.header {
+    padding: 1.2rem 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media @middle {
+        justify-content: center;
+    }
+
+    @media @small {
+        flex-direction: column;
+      }
+}

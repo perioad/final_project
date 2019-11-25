@@ -1,0 +1,82 @@
+// main: ../style.less, out: false, sourceMap: false
+
+.intro__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: calc(100vh - 116px - 54px);
+
+  @media @middle {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 78px - 105px);
+  }
+
+  @media @small {
+    justify-content: center;
+    min-height: calc(100vh - 192px - 123px);
+  }
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+
+  @media @middle {
+    width: 100%;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  @media @small {
+    line-height: 1.4;
+  }
+}
+
+.intro__subtitle {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 200;
+  color: @black;
+
+  @media @small {
+    font-size: 1.4rem;
+  }
+}
+
+.intro__title {
+  margin: 0 1rem;
+  align-self: center;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: @black;
+
+  @media @small {
+    font-size: 2rem;
+  }
+}
+
+.intro__text {
+  margin-bottom: 1.7rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(@black, 0.7);
+
+  @media @small {
+    font-size: 1rem;
+  }
+}
+
+.intro__photo-container {
+  align-self: flex-end;
+
+  @media @middle {
+    align-self: unset;
+  }
+
+  @media @small {
+    display: none;
+  }
+}

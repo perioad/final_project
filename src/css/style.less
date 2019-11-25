@@ -1,0 +1,65 @@
+// out: style.css, sourceMap: false
+
+@import 'vars';
+
+/* Custom */
+
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    color: @black;
+}
+
+h1, h4, h5, h6 {
+    margin: 0;
+}
+
+h2 {
+    margin: 2rem;
+}
+
+h3 {
+    margin: 1rem;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+// a {
+//     color: @black;
+//     text-decoration: none;
+// }
+/* Blocks */
+
+@import 'blocks/container';
+@import 'blocks/header';
+@import 'blocks/logo';
+@import 'blocks/nav';
+@import 'blocks/intro';
+@import 'blocks/btn';
+@import 'blocks/footer';
+@import 'blocks/contacts';
+@import 'blocks/services';
+@import 'blocks/service';
+@import 'blocks/preview';
+@import 'blocks/sign';
+@import 'blocks/sign-up';
+@import 'blocks/sign-in';
+@import 'blocks/account';
+@import 'blocks/loading';
+@import 'blocks/show-error';
+@import 'blocks/popup';
+
+/* Helpers */
+
+@import 'helpers';
