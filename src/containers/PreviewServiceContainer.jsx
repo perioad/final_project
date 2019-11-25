@@ -6,7 +6,7 @@ import { PreviewService } from "../components/PreviewService";
 import { LoadingSpinner } from "../components/LoadingSpinner";
 import { ShowError } from "../components/ShowError";
 import { connect } from "react-redux";
-import Popup from "../components/Popup";
+import PopupContainer from "./PopupContainer";
 
 function PreviewServiceContainer(props) {
   let { id } = useParams();
@@ -27,7 +27,7 @@ function PreviewServiceContainer(props) {
       ) : isLoading || isFetching ? (
         <LoadingSpinner />
       ) : isSuccess ? (
-        <Popup text="Успешно :)" />
+        <PopupContainer text="Успешно :)" />
       ) : (
         <PreviewService service={service} />
       )}

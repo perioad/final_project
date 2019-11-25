@@ -6,7 +6,7 @@ import { signIn } from "../store/actions/signInAction";
 import { signUp } from "../store/actions/registerNewUser";
 import { LoadingSpinner } from "../components/LoadingSpinner";
 import { Redirect } from "react-router-dom";
-import Popup from "../components/Popup";
+import PopupContainer from "./PopupContainer";
 
 function SignContainer(props) {
   const { user, signInAction, signUpAction } = props;
@@ -22,9 +22,9 @@ function SignContainer(props) {
       ) : isLoggedIn ? (
         <Redirect to="/services" />
       ) : isError ? (
-        <Popup text="Что то пошло не так :с" />
+        <PopupContainer text="Что то пошло не так :с" />
       ) : isSuccess ? (
-        <Popup text="Успешно :)" />
+        <PopupContainer text="Успешно :)" />
       ) : (
         <Sign
           api_url_users={api_url_users}

@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { UserInfo } from "../components/UserInfo";
 import { changeUserData } from "../store/actions/changeUserData";
 import { LoadingSpinner } from "../components/LoadingSpinner";
-import Popup from "../components/Popup";
+import PopupContainer from "./PopupContainer";
 
 function UserInfoContainer(props) {
   const { user, changeUserDataAction } = props;
@@ -18,9 +18,9 @@ function UserInfoContainer(props) {
       {isFetching ? (
         <LoadingSpinner />
       ) : isError ? (
-        <Popup text="Что-то пошло не так :с" />
+        <PopupContainer text="Что-то пошло не так :с" />
       ) : isSuccess ? (
-        <Popup text="Все прошло успешно :)" />
+        <PopupContainer text="Успешно :)" />
       ) : (
         <UserInfo
           changeUserData={changeUserDataAction}
